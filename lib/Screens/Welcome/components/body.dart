@@ -13,38 +13,44 @@ class Body extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
 
     return Background(
-        child: Column(
+        child: SingleChildScrollView(
+          child: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        FittedBox(
-          fit: BoxFit.fitWidth,
-          child: Text(
-            "Welcome to",
-            style: GoogleFonts.patrickHand(
-                textStyle:
-                    TextStyle(fontSize: 45, fontWeight: FontWeight.bold)),
+          FittedBox(
+            fit: BoxFit.fitWidth,
+            child: Text(
+              "Welcome to",
+              style: GoogleFonts.patrickHand(
+                  textStyle:
+                      TextStyle(fontSize: 45, fontWeight: FontWeight.bold)),
+            ),
           ),
-        ),
 
-        SvgPicture.asset(
-          "assets/icons/Tippy-Toes-Day-Care-Logo-(text).svg",
-          height: size.height * 0.45,
-        ),
+          //tippy toes logo
+          SvgPicture.asset(
+            "assets/icons/Tippy-Toes-Day-Care-Logo-(text).svg",
+            height: size.height * 0.45,
+          ),
 
-        //login button
-        RoundedButton(
-          text: "LOGIN",
-          press: (){},
-        ),
+          //space
+          SizedBox(height: size.height * 0.02),
 
-        //sign up button
-        RoundedButton(
-          text: "SIGN UP",
-          color: kPrimaryLightColor,
-          press: (){},
-        ),
+          //login button
+          RoundedButton(
+            text: "LOGIN",
+            press: (){},
+          ),
+
+          //sign up button
+          RoundedButton(
+            text: "SIGN UP",
+            color: kPrimaryLightColor,
+            press: (){},
+          ),
       ],
-    ));
+    ),
+        ));
   }
 }
 
