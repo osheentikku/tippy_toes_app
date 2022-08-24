@@ -4,6 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:tippy_toes/Screens/Welcome/components/background.dart';
 import 'package:tippy_toes/constants.dart';
 
+import '../../../components/rounded_buttons.dart';
+
 class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -11,35 +13,38 @@ class Body extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
 
     return Background(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          FittedBox(
-            fit: BoxFit.fitWidth,
-            child: Text(
-              "Welcome to",
-              style: GoogleFonts.patrickHand(
-                textStyle: TextStyle(fontSize: 45, fontWeight: FontWeight.bold)
-              ),
-            ),
+        child: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        FittedBox(
+          fit: BoxFit.fitWidth,
+          child: Text(
+            "Welcome to",
+            style: GoogleFonts.patrickHand(
+                textStyle:
+                    TextStyle(fontSize: 45, fontWeight: FontWeight.bold)),
           ),
+        ),
 
-          SvgPicture.asset(
-            "assets/icons/Tippy-Toes-Day-Care-Logo-(text).svg",
-            height: size.height * 0.45,
-          ),
+        SvgPicture.asset(
+          "assets/icons/Tippy-Toes-Day-Care-Logo-(text).svg",
+          height: size.height * 0.45,
+        ),
 
-          //login button
-            TextButton(
-              style: TextButton.styleFrom(
-                padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
-                backgroundColor: kPrimaryColor, //button background color
-                primary: Colors.black, //button text color
-              ),
-              onPressed: () {},
-              child: Text("LOGIN"),
-            )
-          ],
-        ));
+        //login button
+        RoundedButton(
+          text: "LOGIN",
+          press: (){},
+        ),
+
+        //sign up button
+        RoundedButton(
+          text: "SIGN UP",
+          color: kPrimaryLightColor,
+          press: (){},
+        ),
+      ],
+    ));
   }
 }
+
