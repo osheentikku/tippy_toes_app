@@ -1,0 +1,12 @@
+com.example.tippy_toes.app-jetified-annotation-experimental-1.1.0-0 C:\Users\oshee\.gradle\caches\transforms-3\11e1f0e06ee9923d192c0fdbd3cc0653\transformed\jetified-annotation-experimental-1.1.0\res
+com.example.tippy_toes.app-core-1.6.0-1 C:\Users\oshee\.gradle\caches\transforms-3\ed532868c3e1cb76afc42ef871938ca7\transformed\core-1.6.0\res
+com.example.tippy_toes.app-jetified-window-java-1.0.0-beta04-2 C:\Users\oshee\.gradle\caches\transforms-3\f30c58ca330277f60358cefe2f1f38c8\transformed\jetified-window-java-1.0.0-beta04\res
+com.example.tippy_toes.app-jetified-window-1.0.0-beta04-3 C:\Users\oshee\.gradle\caches\transforms-3\f4b825b564541cce43f8d9a5d4bc23b0\transformed\jetified-window-1.0.0-beta04\res
+com.example.tippy_toes.app-debug-4 C:\Users\oshee\StudioProjects\tippy_toes_app\android\app\src\debug\res
+com.example.tippy_toes.app-main-5 C:\Users\oshee\StudioProjects\tippy_toes_app\android\app\src\main\res
+com.example.tippy_toes.app-pngs-6 C:\Users\oshee\StudioProjects\tippy_toes_app\build\app\generated\res\pngs\debug
+com.example.tippy_toes.app-resValues-7 C:\Users\oshee\StudioProjects\tippy_toes_app\build\app\generated\res\resValues\debug
+com.example.tippy_toes.app-rs-8 C:\Users\oshee\StudioProjects\tippy_toes_app\build\app\generated\res\rs\debug
+com.example.tippy_toes.app-mergeDebugResources-9 C:\Users\oshee\StudioProjects\tippy_toes_app\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
+com.example.tippy_toes.app-mergeDebugResources-10 C:\Users\oshee\StudioProjects\tippy_toes_app\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+com.example.tippy_toes.app-merged_res-11 C:\Users\oshee\StudioProjects\tippy_toes_app\build\app\intermediates\merged_res\debug
