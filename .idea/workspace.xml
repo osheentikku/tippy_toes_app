@@ -9,10 +9,21 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac40c3c2-8eaf-4a26-b024-d29f5f126bb6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/Screens/Login/login_screen.dart" afterDir="false" />
+    <list default="true" id="ac40c3c2-8eaf-4a26-b024-d29f5f126bb6" name="Changes" comment="login button leads to new blank screen">
+      <change afterPath="$PROJECT_DIR$/lib/Screens/Login/components/login_body.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/967e71d8c5e8b84b78ca5a37c131e9d4/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/967e71d8c5e8b84b78ca5a37c131e9d4/app.dill" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/Screens/Welcome/components/body.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Screens/Welcome/components/body.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/assets/debug/mergeDebugAssets/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/assets/debug/mergeDebugAssets/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/compressed_assets/debug/out/assets/flutter_assets/kernel_blob.bin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/compressed_assets/debug/out/assets/flutter_assets/kernel_blob.bin.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/apk/debug/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/outputs/flutter-apk/app.apk.sha1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Screens/Login/login_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Screens/Login/login_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Screens/Welcome/components/background.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Screens/background.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Screens/Welcome/components/body.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Screens/Welcome/components/welcome_body.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/Screens/Welcome/welcome_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Screens/Welcome/welcome_screen.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,11 +66,13 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Dart" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\oshee\StudioProjects\tippy_toes_app\lib\Screens" />
+      <recent name="C:\Users\oshee\StudioProjects\tippy_toes_app\lib\Screens\" />
       <recent name="C:\Users\oshee\StudioProjects\tippy_toes\lib\Screens\Welcome" />
     </key>
   </component>
@@ -113,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661328000277</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="login button leads to new blank screen">
+      <created>1661379124987</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1661379124987</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -139,6 +159,7 @@
     <MESSAGE value="workspace update" />
     <MESSAGE value="created rounded_buttons class&#10;created sign up button" />
     <MESSAGE value="increased space between logo and buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="increased space between logo and buttons" />
+    <MESSAGE value="login button leads to new blank screen" />
+    <option name="LAST_COMMIT_MESSAGE" value="login button leads to new blank screen" />
   </component>
 </project>
