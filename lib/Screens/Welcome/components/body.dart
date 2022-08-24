@@ -18,7 +18,9 @@ class Body extends StatelessWidget {
             fit: BoxFit.fitWidth,
             child: Text(
               "Welcome to",
-              style: GoogleFonts.fredokaOne(),
+              style: GoogleFonts.patrickHand(
+                textStyle: TextStyle(fontSize: 45, fontWeight: FontWeight.bold)
+              ),
             ),
           ),
 
