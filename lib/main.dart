@@ -25,10 +25,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Tippy Toes Daycare',
-      theme: ThemeData(
-        primaryColor: kcPrimaryColor,
-        scaffoldBackgroundColor: Colors.white,
-      ),
       home: LoginScreen(),
     );
   }
