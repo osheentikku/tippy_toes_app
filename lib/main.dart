@@ -1,14 +1,18 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:tippy_toes/Screens/Welcome/welcome_screen.dart';
+import 'package:tippy_toes/Screens/Login/login_screen.dart';
 import 'package:tippy_toes/constants.dart';
 
-void main() {
+Future<void> main() async {
   LicenseRegistry.addLicense(() async* {
     final license = await rootBundle.loadString('google_fonts/OFL.txt');
     yield LicenseEntryWithLineBreaks(['google_fonts'], license);
   });
+
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
 
   runApp(MyApp());
 }
@@ -22,10 +26,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Tippy Toes Daycare',
       theme: ThemeData(
-        primaryColor: kPrimaryColor,
+        primaryColor: kcPrimaryColor,
         scaffoldBackgroundColor: Colors.white,
       ),
-      home: WelcomeScreen(),
+      home: LoginScreen(),
     );
   }
 }

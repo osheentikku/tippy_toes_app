@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "230239747726",
+    "project_id": "tippy-toes-daycare",
+    "storage_bucket": "tippy-toes-daycare.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230239747726:android:467b6a267fe05882a713df",
+        "android_client_info": {
+          "package_name": "us.tippytoes.daycare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230239747726-snv100mhq0v2mnkgebcsaso1o0m5n220.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrmRPqihN2E9TNOvrQvtRdv3oEyjKdN4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230239747726-snv100mhq0v2mnkgebcsaso1o0m5n220.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tippy_toes/Screens/background.dart';
+import 'package:tippy_toes/components/already_have_an_account_check.dart';
 import 'package:tippy_toes/components/rounded_buttons.dart';
 import 'package:tippy_toes/components/rounded_input_field.dart';
 import 'package:tippy_toes/components/rounded_passport_field.dart';
@@ -29,14 +30,14 @@ class LoginBody extends StatelessWidget {
                 "LOGIN",
                 style: GoogleFonts.patrickHand(
                     textStyle:
-                    TextStyle(fontSize: 45, fontWeight: FontWeight.bold)),
+                    TextStyle(fontSize: 40, fontWeight: FontWeight.bold)),
               ),
             ),
 
             //tippy toes logo
             SvgPicture.asset(
               "assets/icons/Tippy-Toes-Day-Care-Logo-(text).svg",
-              height: size.height * 0.4,
+              height: size.height * 0.3,
             ),
 
             //email text field
@@ -56,6 +57,10 @@ class LoginBody extends StatelessWidget {
                 press: () {}
             ),
 
+            //sign up link
+            AlreadyHaveAnAccountCheck(
+              press: () {},
+            )
 
           ],
         ),
@@ -63,6 +68,4 @@ class LoginBody extends StatelessWidget {
     );
   }
 }
-
-
 
