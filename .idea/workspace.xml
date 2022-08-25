@@ -9,11 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac40c3c2-8eaf-4a26-b024-d29f5f126bb6" name="Changes" comment="created a text button">
-      <change afterPath="$PROJECT_DIR$/lib/components/rounded_input_field.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/components/rounded_passport_field.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/components/text_field_container.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ac40c3c2-8eaf-4a26-b024-d29f5f126bb6" name="Changes" comment="created password field class">
       <change beforePath="$PROJECT_DIR$/lib/Screens/Login/components/login_body.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/Screens/Login/components/login_body.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -133,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661381556122</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="created password field class">
+      <created>1661390125368</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1661390125368</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,6 +164,7 @@
     <MESSAGE value="increased space between logo and buttons" />
     <MESSAGE value="login button leads to new blank screen" />
     <MESSAGE value="created a text button" />
-    <option name="LAST_COMMIT_MESSAGE" value="created a text button" />
+    <MESSAGE value="created password field class" />
+    <option name="LAST_COMMIT_MESSAGE" value="created password field class" />
   </component>
 </project>

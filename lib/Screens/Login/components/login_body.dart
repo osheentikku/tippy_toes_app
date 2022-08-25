@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:tippy_toes/Screens/background.dart';
+import 'package:tippy_toes/components/rounded_buttons.dart';
 import 'package:tippy_toes/components/rounded_input_field.dart';
 import 'package:tippy_toes/components/rounded_passport_field.dart';
 import 'package:tippy_toes/components/text_field_container.dart';
@@ -35,7 +36,7 @@ class LoginBody extends StatelessWidget {
             //tippy toes logo
             SvgPicture.asset(
               "assets/icons/Tippy-Toes-Day-Care-Logo-(text).svg",
-              height: size.height * 0.45,
+              height: size.height * 0.4,
             ),
 
             //email text field
@@ -47,9 +48,14 @@ class LoginBody extends StatelessWidget {
             //password text field
             RoundedPasswordField(
               onChanged: (value){},
-            )
+            ),
 
             //login button
+            RoundedButton(
+                text: "LOGIN",
+                press: () {}
+            ),
+
 
           ],
         ),
