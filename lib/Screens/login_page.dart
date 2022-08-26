@@ -13,19 +13,37 @@ class LoginPage extends StatefulWidget {
   State<LoginPage> createState() => _LoginPageState();
 }
 
+
 class _LoginPageState extends State<LoginPage> {
+
+  bool loading = false;
 
   //text controller
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
 
   Future signIn() async {
-    await FirebaseAuth.instance.signInWithEmailAndPassword(
+    setState(() {
+      loading = true;
+    });
+
+    if (_emailController.text == "" || _passwordController.text == "") {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text("All fields are required!"),
+          backgroundColor: kcPrimaryColor,
+        ),
+      );
+    } else {
+      UserCredential result = await FirebaseAuth.instance.signInWithEmailAndPassword(
         email: _emailController.text.trim(),
         password: _passwordController.text.trim(),
-    );
+      );
+    }
+    setState(() {
+      loading = false;
+    });
   }
-
   @override
   void dispose() {
     _emailController.dispose();
@@ -35,7 +53,9 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
+    Size size = MediaQuery
+        .of(context)
+        .size;
     return Background(
       child: SingleChildScrollView(
         child: Column(
@@ -67,8 +87,8 @@ class _LoginPageState extends State<LoginPage> {
                   controller: _emailController,
                   decoration: InputDecoration(
                     icon: Icon(
-                      Icons.person,
-                      color: kcPrimaryColor
+                        Icons.person,
+                        color: kcPrimaryColor
                     ),
                     hintText: "Your email",
                   ),
@@ -95,29 +115,32 @@ class _LoginPageState extends State<LoginPage> {
             ),
 
             SizedBox(height: 10),
-            
+
+
             //login button
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
-              child: GestureDetector(
-                onTap: signIn,
-                child: Container(
-                  width: size.width * 0.7,
-                  padding: EdgeInsets.all(10),
-                  decoration: BoxDecoration(
-                    color: kcPrimaryColor,
-                    borderRadius: BorderRadius.circular(29),
-                  ),
-                  child: Center(
-                    child: Text(
-                      "Sign In",
-                      style: GoogleFonts.patrickHand(
-                        textStyle: TextStyle(
-                            fontSize: 25,
-                            fontWeight: FontWeight.bold,
-                            letterSpacing: 4
-                        )
-                      ), // style
+              child: loading? CircularProgressIndicator(): Container(
+                child: GestureDetector(
+                  onTap: signIn,
+                  child: Container(
+                    width: size.width * 0.7,
+                    padding: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                      color: kcPrimaryColor,
+                      borderRadius: BorderRadius.circular(29),
+                    ),
+                    child: Center(
+                      child: Text(
+                        "Sign In",
+                        style: GoogleFonts.patrickHand(
+                            textStyle: TextStyle(
+                                fontSize: 25,
+                                fontWeight: FontWeight.bold,
+                                letterSpacing: 4
+                            )
+                        ), // style
+                      ),
                     ),
                   ),
                 ),
@@ -125,30 +148,6 @@ class _LoginPageState extends State<LoginPage> {
             ),
 
             SizedBox(height: 20),
-            //sign up link
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget> [
-                Text(
-                  "Don't have an account? ",
-                  style: GoogleFonts.fredokaOne(
-                    textStyle: TextStyle(fontSize: 20, color: kcPrimaryColor)
-                  )
-                ),
-                Text(
-                  "Sign Up!",
-                    style: GoogleFonts.fredokaOne(
-                      textStyle: TextStyle(
-                          fontSize: 20,
-                          color: kcPrimaryColor,
-                          fontWeight: FontWeight.bold
-                      ),
-                    ),
-                ),
-
-
-              ],
-            ),
           ],
         ),
       ),
