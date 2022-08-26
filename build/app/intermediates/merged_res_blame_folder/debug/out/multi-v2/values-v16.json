@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.tippy_toes.app-mergeDebugResources-9:/values-v16/values-v16.xml",
+            "outputFile": "us.tippytoes.daycare.app-mergeDebugResources-14:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\oshee\\.gradle\\caches\\transforms-3\\ed532868c3e1cb76afc42ef871938ca7\\transformed\\core-1.6.0\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\oshee\\.gradle\\caches\\transforms-3\\7100602d263387051cb02d81218bb591\\transformed\\core-1.6.0\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
