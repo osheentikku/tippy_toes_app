@@ -30,19 +30,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-/*
-class MyAppBar extends StatelessWidget {
-  const MyAppBar({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Tippy Toes Daycare'),
-        centerTitle: true,
-      ),
-    );
-  }
-}
-*/

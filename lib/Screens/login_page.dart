@@ -53,23 +53,23 @@ class _LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery
-        .of(context)
-        .size;
+    Size size = MediaQuery.of(context).size;
     return Background(
       child: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-
             //login text
             FittedBox(
               fit: BoxFit.fitWidth,
               child: Text(
-                "insert",
+                "Welcome to",
                 style: GoogleFonts.patrickHand(
-                    textStyle:
-                    TextStyle(fontSize: 40, fontWeight: FontWeight.bold)),
+                    textStyle: TextStyle(
+                        fontSize: 40,
+                        fontWeight: FontWeight.bold
+                    )
+                ),
               ),
             ),
 
@@ -116,7 +116,6 @@ class _LoginPageState extends State<LoginPage> {
 
             SizedBox(height: 10),
 
-
             //login button
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 25.0),
@@ -147,7 +146,32 @@ class _LoginPageState extends State<LoginPage> {
               ),
             ),
 
-            SizedBox(height: 20),
+            SizedBox(height: 10),
+
+            //sign up link
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Don't have an account? ",
+                  style: GoogleFonts.patrickHand(
+                      textStyle: TextStyle(
+                        fontSize: 20,
+                      ),
+                  ),
+                ),
+                Text(
+                    "Sign up now",
+                  style: GoogleFonts.patrickHand(
+                      textStyle: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                      )
+
+                  ),
+                )
+              ],
+            ),
           ],
         ),
       ),
